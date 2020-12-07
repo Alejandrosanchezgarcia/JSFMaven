@@ -1,0 +1,41 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<h:body>
+  <h2>CRUD Primer estadio</h2>
+  <h3>Add Data</h3>
+  <h:form id="f1">
+    <p>Nombre:
+      <p:inputText value="#{obj.nombre}" />
+    </p>
+    <p>Apellido:
+      <p:inputText value="#{obj.apellido}" />
+    </p>
+    <p>Email:
+      <p:inputText value="#{obj.email}" />
+    </p>
+    <p>
+      <p:commandButton value="add" id="ajax" action="#{obj.add}" update="f1,f2" style="margin-right:20px;" styleClass="ui-priority-primary"/>
+      
+    </p>
+  </h:form>
+  <h:form id="f2">
+  <h:panelGroup layout="block" id="container" rendered="#{obj.good}">
+    <p:dataTable value="#{obj.findAll}" var="item">
+     
+      <p:column>
+        <h:outputText value="#{item.nombre}"></h:outputText>
+      </p:column>
+      <p:column>
+        <h:outputText value="#{item.apellido}"></h:outputText>
+      </p:column>
+      <p:column>
+        <h:outputText value="#{item.email}"></h:outputText>
+      </p:column>     
+    </p:dataTable>
+  </h:panelGroup>
+  </h:form>
+</h:body>
+</html>
