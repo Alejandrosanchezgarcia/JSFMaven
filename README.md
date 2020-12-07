@@ -33,10 +33,14 @@ Se necesita tener instalado en nuestro sistema las siguientes herramientas:
 # 4- ¿Cómo arrancar la aplicación?
 
 Primero nos colocaremos en el directorio donde se encuentra el pom.xml, ahí haremos mvn package, esto hará que se compile nuestro proyecto y que se genere una carpeta target en el mismo directorio donde nos encontramos.
+
 Acto seguido entraremos en el directorio target y copiaremos el archivo JSFMaven.war a la carpeta webapps de nuestro apache tomee.
+
 Antes de ir a probar la aplicación debemos de arrancar el servidor tomee, esto se hace yendo a la carpeta bin de apache tomee y ejecutando el script startup.sh .
 También debemos de arrancar Redis para poder visualizar como se introducen los usarios cuando se hace click en add en la aplicación. Arrancar redis es tan fácil como ejecutar la siguiente línea de código en el terminal (se recomienda usar ubuntu), redis-cli , una vez abierto el servidor redis debemos escribir monitor, con esto haremos el seguimiento de los datos introducidos.
+
 Ya solo queda hacer la siguiente busqueda en nuestro navegador, localhost:8080/JSFMaven .
+
 Con estos pasos nuestra apliación correrá perfectamente.
 
 
