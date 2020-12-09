@@ -11,11 +11,17 @@ Redis -> Hemos usado redis para darle persistencia a los datos introducidos por 
 JSF -> La tecnología JavaServer Faces es un framework de interfaz de componentes de usuarios del lado del servidor para las aplicaciones web basadas en la tecnología Java.
 
 ¿Por qué hemos usado JSF?
+
 JSF proporciona:
+
 a) Una clara separación entre vista y modelo.
+
 b) Desarrollo basado en componente, no en peticiones.
+
 c) Las acciones del usuario se ligan muy fácilmente al código en el servidor.
+
 d) Creación de familias de componentes visuales para acelerar el desarrollo.
+
 e) Ofrece múltiples posibilidades de elección entre distintos desarrollos.
 
 PrameFaces -> PrimeFaces es una biblioteca de componentes para JavaServer Faces (JSF) de código abierto que cuenta con un conjunto de componentes enriquecidos que facilitan la creación de las aplicaciones web.
